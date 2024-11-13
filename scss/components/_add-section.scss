@@ -6,9 +6,6 @@
   max-width: 500px;
   width: 100%;
   color: var(--main-dark);
-  // @media screen and (max-width: $bp-tablet) {
-  //   padding: 20px 20px;
-  // }
   @media screen and (max-width: $bp-mobile) {
     padding: 20px 20px;
   }
@@ -29,6 +26,7 @@
     border: none;
     width: 100%;
     font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     @media screen and (max-width: $bp-tablet) {
       font-size: 16px;
     }
@@ -51,6 +49,7 @@
     background-color: var(--button);
     border-radius: 6px;
     padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-size: 20px;
     @media screen and (max-width: $bp-mobile) {
       font-size: 16px;

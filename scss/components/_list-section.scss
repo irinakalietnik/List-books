@@ -53,6 +53,7 @@
     padding: 0;
     list-style: none;
     margin: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     @media screen and (max-width: $bp-mobile) {
       font-size: 14px;
     }
@@ -80,6 +81,7 @@
     color: var(--main-dark);
     border-radius: 6px;
     border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   &__btn:hover {
     background-color: var(--button-hover);

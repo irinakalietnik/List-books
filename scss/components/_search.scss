@@ -29,7 +29,6 @@
   }
   &__autocomplete-items {
     position: absolute;
-    border: 1px solid var(--light);
     width: 100%;
     border-top: none;
     background-color: var(--light);
@@ -78,7 +77,8 @@
     font-size: 20px;
     padding: 10px;
     border: none;
-    border: 1px solid var(--main-dark);
+    border: 1px solid var(--main-light);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     color: var(--button);
     width: 100%;
@@ -104,6 +104,7 @@
     border-radius: 6px;
     background-color: var(--button);
     color: var(--main-dark);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     @media screen and (max-width: $bp-mobile) {
       font-size: 16px;
     }
