@@ -1,0 +1,125 @@
+.search {
+  margin: 0 auto 40px;
+  max-width: 700px;
+  width: 100%;
+  @media screen and (max-width: $bp-mobile) {
+    max-width: 600px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    color: var(--main-dark);
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 26px;
+    }
+  }
+  &__find-options {
+    color: var(--main-dark);
+    padding: 6px;
+    margin: 6px 3px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  &__autocomplete-items {
+    position: absolute;
+    border: 1px solid var(--light);
+    width: 100%;
+    border-top: none;
+    background-color: var(--light);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    color: var(--main-dark);
+  }
+  &__autocomplete-box {
+    width: 100%;
+  }
+  &__autocomplete-item {
+    padding: 12px;
+    cursor: pointer;
+    background-color: var(--light);
+    border-bottom: 1px solid var(--light);
+    transition: background-color 0.3s;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 12px;
+    }
+  }
+  &__autocomplete-item:last-child {
+    border-bottom: none;
+  }
+
+  &__autocomplete-item:hover {
+    background-color: var(--main-light);
+  }
+
+  &__autocomplete-item.selected {
+    background-color: #007bff;
+    color: var(--light);
+  }
+  &__input-block {
+    display: flex;
+  }
+  &__input {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border: 1px solid var(--main-dark);
+    border-radius: 6px;
+    color: var(--button);
+    width: 100%;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 12px;
+    }
+  }
+  &__input:focus {
+    border: 2px solid var(--button-hover);
+    outline: none;
+  }
+  &__input::placeholder {
+    color: var(--new);
+  }
+  &__btn {
+    display: block;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--button);
+    color: var(--main-dark);
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+    }
+  }
+  &__btn:hover {
+    background-color: var(--button-hover);
+    color: var(--container);
+  }
+  &__radio-block {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      gap: 2px;
+      font-size: 12px;
+    }
+  }
+}

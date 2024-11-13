@@ -1,0 +1,73 @@
+.modal {
+  z-index: 10;
+  position: relative;
+  max-width: 580px;
+  width: 100%;
+  height: 100%;
+  max-height: 580px;
+
+  background-color: var(--container);
+  border-radius: 32px;
+  padding: 30px 50px;
+  overflow: auto;
+  &__btns-block {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    width: 180px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+  }
+  &__close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 26px;
+    color: var(--main-dark);
+  }
+  &__btn {
+    font-size: 18px;
+    color: var(--main-dark);
+    border: none;
+    background-color: var(--button);
+    border-radius: 6px;
+    padding: 10px;
+  }
+  &__btn:hover {
+    background-color: var(--button-hover);
+    color: var(--light);
+  }
+  &__info-block {
+    color: var(--main-dark);
+    font-size: 18px;
+    background-color: var(--main-light);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 12px;
+    padding: 30px;
+    height: fit-content;
+  }
+  &__field {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__field input {
+    width: 300px;
+    color: var(--button-hover);
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 6px;
+    outline: none;
+    border: none;
+  }
+  &__field input:focus {
+    border: 2px solid var(--main-dark);
+  }
+}

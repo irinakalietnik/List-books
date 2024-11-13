@@ -1,0 +1,77 @@
+.add-section {
+  padding: 20px 40px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: var(--main-light);
+  max-width: 500px;
+  width: 100%;
+  color: var(--main-dark);
+  // @media screen and (max-width: $bp-tablet) {
+  //   padding: 20px 20px;
+  // }
+  @media screen and (max-width: $bp-mobile) {
+    padding: 20px 20px;
+  }
+  &__field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    @media screen and (max-width: $bp-mobile) {
+      gap: 10px;
+    }
+  }
+  &__field input {
+    border-radius: 6px;
+    padding: 8px;
+    outline: none;
+    color: var(--button-hover);
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 12px;
+    }
+  }
+  &__field input:focus {
+    border: 2px solid var(--new);
+  }
+  &__field span {
+    font-size: 18px;
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 12px;
+    }
+  }
+  &__btn-add {
+    color: var(--main-dark);
+    border: none;
+    background-color: var(--button);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 20px;
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+    }
+  }
+  &__btn-add:hover {
+    color: var(--light);
+    background-color: var(--button-hover);
+  }
+  &__title {
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    color: var(--main-dark);
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 26px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

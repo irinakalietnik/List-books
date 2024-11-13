@@ -1,0 +1,15 @@
+*,
+body {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.main-container {
+  background-color: var(--container);
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 24px;
+  height: 100%;
+  margin: auto;
+}

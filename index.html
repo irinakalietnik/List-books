@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="add-section">
+        <form
+          class="add-section__form"
+          id="form"
+          onsubmit="return false"
+          action=""
+        >
+          <h3 class="add-section__title">Add books</h3>
+          <div class="add-section__field">
+            <span>Name</span>
+            <input id="name1" type="text" />
+          </div>
+          <div class="add-section__field">
+            <span>Author</span>
+            <input id="author1" type="text" />
+          </div>
+          <div class="add-section__field">
+            <span>Genre</span>
+            <input id="genre1" type="text" />
+          </div>
+          <div class="add-section__field">
+            <span>Publication</span>
+            <input id="publication1" type="text" />
+          </div>
+          <button class="add-section__btn-add" id="btnAdd">Add book</button>
+        </form>
+      </section>
+      <section class="search">
+        <h3 class="search__title">Book search</h3>
+        <div class="search__autocomplete-box">
+          <div class="search__find-options">
+            <div class="search__radio-block">
+              <span>Name</span>
+              <input data-find="name" type="radio" name="name" />
+            </div>
+            <div class="search__radio-block">
+              <span>Author</span>
+              <input type="radio" data-find="author" name="name" />
+            </div>
+            <div class="search__radio-block">
+              <span>Genre</span>
+              <input type="radio" data-find="genre" name="name" />
+            </div>
+            <div class="search__radio-block">
+              <span>Publication</span>
+              <input type="radio" data-find="publication" name="name" />
+            </div>
+          </div>
+          <div class="search__autocomplete">
+            <div class="search__input-block">
+              <input
+                class="search__input"
+                id="inputSearch"
+                name="i"
+                type="search"
+                placeholder="Search.."
+              />
+              <button class="search__btn" id="btnSearch" type="button">
+                Show
+              </button>
+            </div>
+            <div
+              id="autocomplete-items"
+              class="search__autocomplete-items"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="list-section">
+        <div class="list-section__list-block">
+          <h4 class="list-section__title">My list books</h4>
+          <div class="list-section__sort-block">
+            <span>Sort</span>
+            <select class="list-section__sort" id="sort">
+              <option value="A-Z" selected>A-Z</option>
+              <option value="Z-A">Z-A</option>
+            </select>
+          </div>
+          <ul class="list-section__list-books" id="listBooks"></ul>
+          <div class="list-section__pagination" id="paginationControls">
+            <button class="list-section__btn" id="prevPage">Previous</button>
+            <span class="list-section__page" id="pageNumber">Page 1</span>
+            <button class="list-section__btn" id="nextPage">Next</button>
+          </div>
+        </div>
+        <!-- <div class="list-section__img-box">
+          <img class="search__img" src="./image/book1.jpeg" alt="" />
+        </div> -->
+      </section>
+      <div class="backdrop backdrop__is-hidden">
+        <div class="modal">
+          <button class="modal__close modal-btn-close" type="button">
+            <img src="./image/dagger.svg" alt="" />
+          </button>
+          <h3 class="modal__title">Information</h3>
+          <div class="modal__info-block" id="infoBook"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+.list-section {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+  padding: 30px;
+  opacity: 0.8;
+  background-image: url(../image/book1.jpeg);
+  background-size: cover;
+  border-radius: 12px;
+  color: var(--main-dark);
+  @media screen and (max-width: $bp-mobile) {
+    padding: 0;
+  }
+  &__title {
+    text-align: center;
+    margin: 16px;
+    font-size: 28px;
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      font-size: 26px;
+      margin: 8px;
+    }
+  }
+  &__list-block {
+    opacity: 0.85;
+    list-style-image: none;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: var(--light);
+    margin: 0 auto;
+  }
+  &__sort-block {
+    font-size: 16px;
+    text-align: end;
+  }
+  &__sort-block select {
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: var(--new);
+    color: var(--light);
+  }
+
+  &__list-books {
+    background-color: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    margin: 12px;
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 14px;
+    }
+  }
+
+  &__pagination {
+    border: 1px solid var(--button);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: var(--container);
+  }
+  &__list-books li {
+    padding: 6px;
+  }
+  &__list-books li:hover {
+    background-color: var(--main-light);
+  }
+  &__btn {
+    padding: 8px;
+    background-color: var(--button);
+    color: var(--main-dark);
+    border-radius: 6px;
+    border: none;
+  }
+  &__btn:hover {
+    background-color: var(--button-hover);
+    color: var(--container);
+  }
+  &__img-box {
+    border-radius: 12px;
+    width: 100%;
+  }
+}
