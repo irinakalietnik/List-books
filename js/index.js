@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     addBook(name, author, genre, publication) {
       this.books.push(new Book(name, author, genre, publication));
-
       renderListBooks(this.books);
     }
 
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
       this.books[index].genre = genre2.value;
       this.books[index].publication = publication2.value;
       listContacts.children[index].innerHTML = name2.value;
-
       renderListBooks(this.books);
     }
 
@@ -106,8 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
     modalBtnClose.onclick = function () {
       modal.classList.add("backdrop__is-hidden");
     };
-    console.log(books[index].name);
-
     infoBookModal.innerHTML = ` <div class="modal__field">
             <span>Name</span>
             <input id="name2" type="text" value='${books[index].name}'/>
@@ -128,8 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <button class="modal__btn" id="btnDelete">Delete</button>
           </div>
         </div>`;
-    console.log(name2.value);
-
     const btnDelete = document.getElementById("btnDelete");
     const btnEdit = document.getElementById("btnEdit");
     btnDelete.addEventListener("click", function () {
@@ -216,8 +210,8 @@ document.addEventListener("DOMContentLoaded", function () {
   myListBook.addBook("Book of Night", "Richard Osmun", "Romance", "Viking");
   myListBook.findBook("name");
   myListBook.sortBooks("A-Z");
-  const btnAddBook = document.getElementById("btnAdd");
 
+  const btnAddBook = document.getElementById("btnAdd");
   btnAddBook.addEventListener("click", function (event) {
     myListBook.addBook(
       name1.value,
