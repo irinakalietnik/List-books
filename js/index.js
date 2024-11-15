@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
       this.books[index].author = author2.value;
       this.books[index].genre = genre2.value;
       this.books[index].publication = publication2.value;
-      listContacts.children[index].innerHTML = name2.value;
       renderListBooks(this.books);
     }
 
@@ -128,6 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnEdit = document.getElementById("btnEdit");
     btnDelete.addEventListener("click", function () {
       myListBook.deleteBook(index);
+      modal.classList.add("backdrop__is-hidden");
     });
     btnEdit.addEventListener("click", function () {
       modal.classList.add("backdrop__is-hidden");
